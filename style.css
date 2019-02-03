@@ -10,7 +10,7 @@
 :root{
   --page-width: 8.5in;
   --page-height: 11in;
-  --main-width: 6.4in;
+  --main-width: 6.2in;
   --sidebar-width: calc(var(--page-width) - var(--main-width));
   --decorator-horizontal-margin: 0.2in;
 
@@ -52,7 +52,7 @@ li{
 #main{
   float: left;
   width: var(--main-width);
-  padding: 0.25in 0.25in 0 0.25in;
+  padding: 0.15in 0.2in 0 0.2in;
   font-size: 7pt;
 }
 
@@ -61,9 +61,10 @@ li{
   position: relative; /* for disclaimer */
   width: var(--sidebar-width);
   height: 100%;
-  padding: 0.6in var(--sidebar-horizontal-padding);
-  background-color: #f2f2f2;
-  font-size: 8.5pt;
+  padding: 0.0in var(--sidebar-horizontal-padding);
+  /*background-color: #FFFFE0;*/
+  background-color: #FFFFF0;
+  font-size: 8pt;
 }
 
 /* main */
@@ -73,10 +74,16 @@ li{
   text-transform: uppercase;
 }
 
+
+.myChart{
+  background-color: #f2f2f2;
+
+}
+
 #title{
   position: relative;
   left: 0.55in;
-  margin-bottom: 0.3in;
+  margin-bottom: 0.2in;
   line-height: 1.2;
 }
 
@@ -275,8 +282,8 @@ li{
   position: relative;
   right: 3pt;
   top: 0.25pt;
-  font-family: FontAwesome;
-  font-weight: normal;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
   font-style: normal;
   text-decoration: inherit;
   content: "\f041";
@@ -325,13 +332,17 @@ li{
 }
 
 .side-block{
-  margin-top: 0.5in; 
+  margin-top: 0.4in;
+}
+
+#contact{
+  margin-top: 0.3in;
 }
 
 #contact ul{
   margin-top: 0.05in;
   padding-left: 0;
-  font-family: "Source Code Pro";
+  /*font-family: "Source Code Pro";*/
   font-weight: 400;
   line-height: 1.75;
 }
@@ -339,13 +350,14 @@ li{
 #contact li > i{
   width: 9pt; /* for text alignment */
   text-align: right;
+  padding-top: 6pt;
 }
 
-#skills{
+#skills, #memberships, #interests{
   line-height: 1.5;
 }
 
-#skills ul{
+#skills ul, #memberships ul, #interests ul{
   margin: 0.05in 0 0.15in;
   padding: 0;
 }
@@ -367,3 +379,24 @@ li{
   font-weight: 400;
   font-style: normal;
 }
+
+/* Make sure that padding behaves as expected */
+* {box-sizing:border-box}
+
+/* Container for skill bars */
+.container {
+    width: 100%; /* Full width */
+    background-color: #ddd; /* Grey background */
+}
+
+.skills, .memberships, .interests {
+    text-align: right; /* Right-align text */
+    padding: 10px; /* Add some padding */
+    color: white; /* White text color */
+}
+
+
+.html {width: 90%; background-color: #4CAF50;} /* Green */
+.css {width: 80%; background-color: #2196F3;} /* Blue */
+.js {width: 65%; background-color: #f44336;} /* Red */
+.php {width: 60%; background-color: #808080;} /* Dark Grey */

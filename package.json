@@ -1,0 +1,26 @@
+{
+  "name": "html-resume",
+  "version": "1.0.0",
+  "description": "A single-page résumé template done purely with HTML and CSS, which can be rendered into PDF through web browsers' print-to-PDF functionality, making a nice, sleek, professsional and ready-to-print résumé. See my living example at: https://mnjul.net/cv/resume.pdf",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jamie-sherriff/html-resume.git"
+  },
+  "author": "Jamie Sherriff",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/jamie-sherriff/html-resume/issues"
+  },
+  "homepage": "https://github.com/jamie-sherriff/html-resume#readme",
+  "dependencies": {
+    "chart.js": "^2.7.3",
+    "normalize.css": "^8.0.1"
+  },
+  "devDependencies": {
+    "chance": "^1.0.18"
+  }
+}
