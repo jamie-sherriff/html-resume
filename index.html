@@ -7,16 +7,52 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.bundle.js"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
-<body>
-<object class="resume-box" name="resume" type="text/html" data="resume.html">
-</object>
-</body>
-<style>
-    .resume-box {
-        width: 8.5in;;
-        height: 11in;
-    }
-
-</style>
+<body lang="en">
+    <section id="main">
+        <header id="title">
+            <!--title data here-->
+        </header>
+        <section class="main-block" id="experience-block">
+            <!--experience data here-->
+        </section>
+        <section class="main-block" id="project-block">
+            <!--project data here-->
+        </section>
+        <section class="main-block concise" id="education-block">
+            <!--education data here-->
+        </section>
+    </section>
+    <aside id="sidebar">
+        <div class="side-block" id="contact">
+            <!--contact data here-->
+        </div>
+        <div class="side-block" id="skills">
+            <!--skills data here-->
+        </div>
+    
+        <div class="side-block" id="memberships">
+            <!--memberships data here-->
+        </div>
+    
+        <div class="side-block" id="interests">
+            <!--interests data here-->
+        </div>
+    
+        <div class="side-block" id ="charts">
+            <h1>Skills</h1>
+            <canvas id="skillsChart" width="100" height="100"></canvas>
+    
+            <div class="side-block">
+                <h1>Programming</h1>
+                <canvas id="programmingChart" width="100" height="100"></canvas>
+            </div>
+        </div>
+    </aside>
+    </body>
+    <script src="js/resume-charts.js"></script>
+    <script src="js/cv-data.js"></script>
+    <script src="js/dummyData.js"></script>
+    <script src="js/injectData.js"></script>
 </html>
